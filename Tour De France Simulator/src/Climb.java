@@ -5,4 +5,5 @@ public class Climb
 		private int grade;
 		private int elevation;
 		private int climbPoints;
+		//added practice
 	}
