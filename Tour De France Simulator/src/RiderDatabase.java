@@ -10,5 +10,5 @@ public class RiderDatabase
 		ArrayList <Rider> yellowJersey = new ArrayList<Rider>();
 		ArrayList <Rider> greenJersey = new ArrayList<Rider>();
 		ArrayList <Rider> polkaJersey = new ArrayList<Rider>();
-		//will use 5 riders to be able to test program, and add more later
+		//will use 5 riders to be able to test program, and add more laterr
 	}
