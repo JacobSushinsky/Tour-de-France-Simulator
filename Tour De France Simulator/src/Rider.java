@@ -8,59 +8,59 @@ public class Rider
 		private String specialty;
 		public Rider(String n, String c, int g, int p, int t, String s)
 			{
-				n = name;
-				c = team;
-				g = sprintPoints;
-				p = mountainPoints;
-				t = time;
-				s = specialty;
+				name = n;
+				team = c;
+				sprintPoints = g;
+				mountainPoints = p;
+				time = t;
+				specialty = s;
 			}
 		public String getName()
-		{
-			return name;
-		}
+			{
+				return name;
+			}
 		public String getTeam()
-		{
-			return team;
-		}
+			{
+				return team;
+			}
 		public int getSprintPoints()
-		{
-			return sprintPoints;
-		}
+			{
+				return sprintPoints;
+			}
 		public int getMountainPoints()
-		{
-			return mountainPoints;
-		}
+			{
+				return mountainPoints;
+			}
 		public int getTime()
-		{
-			return time;
-		}
+			{
+				return time;
+			}
 		public String getSpecialty()
-		{
-			return specialty;
-		}
+			{
+				return specialty;
+			}
 		public void setName(String n)
-		{
-			name = n;
-		}
+			{
+				name = n;
+			}
 		public void setTeam(String t)
-		{
-			team = t;
-		}
+			{
+				team = t;
+			}
 		public void setSprintPoints(int g)
-		{
-			sprintPoints = g;
-		}
+			{
+				sprintPoints = g;
+			}
 		public void setMountainPoints(int p)
-		{
-			mountainPoints = p;
-		}
+			{
+				mountainPoints = p;
+			}
 		public void setTime(int t)
-		{
-			time = t;
-		}
+			{
+				time = t;
+			}
 		public void setSpecialty(String s)
-		{
-			specialty = s;
-		}
+			{
+				specialty = s;
+			}
 	}

@@ -7,52 +7,52 @@ public class Stage
 		private int mountainPoints;
 //		private Sprint sprint;
 //		private Climb climb;
-		public Stage(String t; String n; int d; int g; int m)
+		public Stage(String t, String n, int d, int g, int m)
 			{
-				t = stageType;
-				n = stageName;
-				d = distance;
-				g = greenPoints; 
-				m = mountainPoints;
+				stageType = t;
+				stageName = n;
+				distance = d;
+				greenPoints = g;
+				mountainPoints = m;
 			}
 		public String getStageType()
-		{
-			return stageType;
-		}
+			{
+				return stageType;
+			}
 		public String getStageName()
-		{
-			return stageName;
-		}
+			{
+				return stageName;
+			}
 		public int getDistance()
-		{
-			return distance;
-		}
+			{
+				return distance;
+			}
 		public int getGreenPoints()
-		{
-			return greenPoints;
-		}
+			{
+				return greenPoints;
+			}
 		public int getMountainPoints()
-		{
-			return mountainPoints;
-		}
+			{
+				return mountainPoints;
+			}
 		public void setStageType(String t)
-		{
-			stageType = t;
-		}
+			{
+				stageType = t;
+			}
 		public void setStageName(String n)
-		{
-			stageName = n;
-		}
+			{
+				stageName = n;
+			}
 		public void setDistance(int d)
-		{
-			distance = d;
-		}
+			{
+				distance = d;
+			}
 		public void setGreenPoints(int g)
-		{
-			greenPoints = g;
-		}
+			{
+				greenPoints = g;
+			}
 		public void setMountainPoints(int m)
-		{
-			mountainPoints = m;
-		}
+			{
+				mountainPoints = m;
+			}
 	}
