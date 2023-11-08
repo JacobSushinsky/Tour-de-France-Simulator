@@ -15,4 +15,44 @@ public class Stage
 				g = greenPoints; 
 				m = mountainPoints;
 			}
+		public String getStageType()
+		{
+			return stageType;
+		}
+		public String getStageName()
+		{
+			return stageName;
+		}
+		public int getDistance()
+		{
+			return distance;
+		}
+		public int getGreenPoints()
+		{
+			return greenPoints;
+		}
+		public int getMountainPoints()
+		{
+			return mountainPoints;
+		}
+		public void setStageType(String t)
+		{
+			stageType = t;
+		}
+		public void setStageName(String n)
+		{
+			stageName = n;
+		}
+		public void setDistance(int d)
+		{
+			distance = d;
+		}
+		public void setGreenPoints(int g)
+		{
+			greenPoints = g;
+		}
+		public void setMountainPoints(int m)
+		{
+			mountainPoints = m;
+		}
 	}

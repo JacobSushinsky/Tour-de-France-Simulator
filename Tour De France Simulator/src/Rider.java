@@ -15,4 +15,52 @@ public class Rider
 				t = time;
 				s = specialty;
 			}
+		public String getName()
+		{
+			return name;
+		}
+		public String getTeam()
+		{
+			return team;
+		}
+		public int getSprintPoints()
+		{
+			return sprintPoints;
+		}
+		public int getMountainPoints()
+		{
+			return mountainPoints;
+		}
+		public int getTime()
+		{
+			return time;
+		}
+		public String getSpecialty()
+		{
+			return specialty;
+		}
+		public void setName(String n)
+		{
+			name = n;
+		}
+		public void setTeam(String t)
+		{
+			team = t;
+		}
+		public void setSprintPoints(int g)
+		{
+			sprintPoints = g;
+		}
+		public void setMountainPoints(int p)
+		{
+			mountainPoints = p;
+		}
+		public void setTime(int t)
+		{
+			time = t;
+		}
+		public void setSpecialty(String s)
+		{
+			specialty = s;
+		}
 	}
