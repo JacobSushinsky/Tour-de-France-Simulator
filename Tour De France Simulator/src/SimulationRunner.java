@@ -1,9 +1,12 @@
 import java.util.Scanner;
 public class SimulationRunner
 	{
+		static int playerNumber;
 		public static void main(String[] args)
 			{
 				Database.fillStartList();
+				Database.fillStageList();
+				Database.fillLeaderboards();
 				for(Rider r : Database.startList)
 					{
 						System.out.println(r.getName());
@@ -11,7 +14,7 @@ public class SimulationRunner
 				createCharacter();
 //				for(Stage s : Database.stageList)
 //					{
-//						introStage();
+						introStage();
 //						stageSetUp();
 //						ride();
 //						updateStandings();
@@ -47,5 +50,29 @@ public class SimulationRunner
 				replaceNum--;
 				Database.startList.get(replaceNum).setName(name);
 				Database.startList.get(replaceNum).setSpecialty(specialties[specialtyNum]);
+				playerNumber = replaceNum;
+			}
+		public static void introStage()
+			{
+				int stageCount = 1;
+				int stageNum = 0;
+				int climbCount;
+				int sprintCount;
+				if(Database.stageList.get(stageNum).getStageType().equals("Mountain"))
+					{
+						climbCount = (int)(Math.random()*3)+3;
+						sprintCount = (int)(Math.random()*3);
+					}
+				else 
+					{
+						climbCount = 1;
+						sprintCount = 3;
+					}
+				System.out.println("Welcome to stage " + stageCount + " of the Tour de France! Today's stage is a " + Database.stageList.get(stageNum).getStageType() + 
+						"stage, stretching " + Database.stageList.get(stageNum).getDistance() + "km, from " + Database.stageList.get(stageNum).getStageName() + ". " 
+						+ "There are " + climbCount + " climbs and " + sprintCount + " sprint points on the route, making " +  Database.stageList.get(stageNum).getMountainPoints()
+						+ " Polka-Dot Jersey Points and " + Database.stageList.get(stageNum).getGreenPoints() + " Green Jersey Points available. Good luck today!");
+				stageCount++;
+				stageNum++;
 			}
 	}
